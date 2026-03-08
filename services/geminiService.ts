@@ -13,7 +13,7 @@ const FALLBACK_QUESTIONS: Question[] = [
   }
 ];
 
-export const generateQuizQuestions = async (count: number = 128): Promise<GeneratedQuizData> => {
+export const generateQuizQuestions = async (count: number = 20): Promise<GeneratedQuizData> => {
   const apiKey = process.env.API_KEY;
   if (!apiKey) {
     console.warn("No API Key found. Returning fallback data.");
@@ -24,7 +24,7 @@ export const generateQuizQuestions = async (count: number = 128): Promise<Genera
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3-flash-preview",
+      model: "gemini-2.0-flash",
       contents: `
       SOURCE MATERIAL:
       ${RAW_CIVICS_QUESTIONS}
