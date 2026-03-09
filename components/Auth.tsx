@@ -29,13 +29,13 @@ const Auth: React.FC<AuthProps> = ({ onLogin }) => {
       {
         name: 'Matheus',
         email: 'matheusbr@gmail.com',
-        password: 'mmcs23121980BR!@',
+        password: '34638',
         seed: 'Matheus'
       },
       {
         name: 'Aline',
         email: 'aline.cos07@gmail.com',
-        password: 'cris1980',
+        password: '34638',
         seed: 'Aline'
       }
     ];
